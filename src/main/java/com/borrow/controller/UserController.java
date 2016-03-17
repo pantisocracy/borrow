@@ -32,7 +32,12 @@ public class UserController {
         user.setId(2L);
         user.setUsername("liangbicong");
         user.setPassword("liangbicong");
-        userService.sive(user);
+        userService.save(user);
+
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("admin");
+        userInfo.setPassword("admin");
+        userService.save(userInfo);
     }
 
     @Transactional

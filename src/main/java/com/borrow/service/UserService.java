@@ -18,6 +18,9 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private UserInfoMapper userInfoMapper;
+
     public List<User> getUserMapper() {
         List<User> userList = userMapper.findAll();
         return userList;
@@ -29,8 +32,12 @@ public class UserService {
         List<User> list = page.getContent();
         return list;
     }
-    public void sive(User user) {
+    public void save(User user) {
         userMapper.save(user);
 
+    }
+
+    public void save(UserInfo userInfo){
+        userInfoMapper.insert(userInfo);
     }
 }
