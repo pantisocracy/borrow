@@ -2,7 +2,7 @@ package com.borrow.entity;
 
 import java.util.Date;
 
-public class UsersInfo {
+public class UserInfo {
     private Integer id;
 
     private String userName;
@@ -25,7 +25,7 @@ public class UsersInfo {
 
     private Integer type;
 
-    public UsersInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type) {
+    public UserInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type) {
         this.id = id;
         this.userName = userName;
         this.sex = sex;
@@ -39,7 +39,7 @@ public class UsersInfo {
         this.type = type;
     }
 
-    public UsersInfo() {
+    public UserInfo() {
         super();
     }
 

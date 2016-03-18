@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface ProviderInfoMapper {
+public interface ProviderInfoMapper  extends BaseMapper<ProviderInfo,Integer>{
     @Delete({
         "delete from provider",
         "where id = #{id,jdbcType=INTEGER}"

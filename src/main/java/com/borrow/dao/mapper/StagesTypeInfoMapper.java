@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface StagesTypeInfoMapper {
+public interface StagesTypeInfoMapper extends BaseMapper<StagesTypeInfo,Integer>{
     @Delete({
         "delete from stages_type",
         "where id = #{id,jdbcType=INTEGER}"

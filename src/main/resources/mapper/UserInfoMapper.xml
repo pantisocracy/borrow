@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.borrow.dao.mapper.UsersInfoMapper" >
-  <resultMap id="BaseResultMap" type="com.borrow.entity.UsersInfo" >
+<mapper namespace="com.borrow.dao.mapper.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.borrow.entity.UserInfo" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="user_name" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -20,7 +20,7 @@
     id, user_name, sex, age, mobile, school_id, identity, apply_account, add_time, update_time, 
     type
   </sql>
-  <insert id="insertSelective" parameterType="com.borrow.entity.UsersInfo" >
+  <insert id="insertSelective" parameterType="com.borrow.entity.UserInfo" >
     insert into users
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -93,7 +93,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.borrow.entity.UsersInfo" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.borrow.entity.UserInfo" >
     update users
     <set >
       <if test="userName != null" >
@@ -129,4 +129,19 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+
+  <select id="findAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from users
+  </select>
+
+
+  <select id="findAllByPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from users
+  </select>
+
 </mapper>

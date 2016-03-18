@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface ApplyInfoMapper {
+public interface ApplyInfoMapper extends BaseMapper<ApplyInfo,Integer>{
     @Delete({
         "delete from apply",
         "where id = #{id,jdbcType=INTEGER}"

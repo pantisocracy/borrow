@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface AreaInfoMapper {
+public interface AreaInfoMapper extends BaseMapper<AreaInfo,Integer>{
     @Delete({
         "delete from area",
         "where areaid = #{areaid,jdbcType=INTEGER}"

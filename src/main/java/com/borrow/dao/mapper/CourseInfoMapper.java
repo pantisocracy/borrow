@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface CourseInfoMapper {
+public interface CourseInfoMapper extends BaseMapper<CourseInfo,Integer>{
     @Delete({
         "delete from course",
         "where id = #{id,jdbcType=INTEGER}"

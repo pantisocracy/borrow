@@ -58,4 +58,16 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from provider
+  </select>
+
+
+  <select id="findAllByPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from provider
+  </select>
 </mapper>

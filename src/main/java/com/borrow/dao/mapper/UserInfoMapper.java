@@ -1,13 +1,13 @@
 package com.borrow.dao.mapper;
 
-import com.borrow.entity.UsersInfo;
+import com.borrow.entity.UserInfo;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-public interface UsersInfoMapper {
+public interface UserInfoMapper extends BaseMapper<UserInfo,Integer>{
     @Delete({
         "delete from users",
         "where id = #{id,jdbcType=INTEGER}"
@@ -26,9 +26,9 @@ public interface UsersInfoMapper {
         "#{applyAccount,jdbcType=INTEGER}, #{addTime,jdbcType=TIMESTAMP}, ",
         "#{updateTime,jdbcType=TIMESTAMP}, #{type,jdbcType=INTEGER})"
     })
-    int insert(UsersInfo record);
+    int insert(UserInfo record);
 
-    int insertSelective(UsersInfo record);
+    int insertSelective(UserInfo record);
 
     @Select({
         "select",
@@ -38,9 +38,9 @@ public interface UsersInfoMapper {
         "where id = #{id,jdbcType=INTEGER}"
     })
     @ResultMap("BaseResultMap")
-    UsersInfo selectByPrimaryKey(Integer id);
+    UserInfo selectByPrimaryKey(Integer id);
 
-    int updateByPrimaryKeySelective(UsersInfo record);
+    int updateByPrimaryKeySelective(UserInfo record);
 
     @Update({
         "update users",
@@ -56,5 +56,5 @@ public interface UsersInfoMapper {
           "type = #{type,jdbcType=INTEGER}",
         "where id = #{id,jdbcType=INTEGER}"
     })
-    int updateByPrimaryKey(UsersInfo record);
+    int updateByPrimaryKey(UserInfo record);
 }
