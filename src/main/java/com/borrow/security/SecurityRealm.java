@@ -39,7 +39,7 @@ public class SecurityRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
                 user.getUserName(), //用户名
                 user.getPassWord(), //密码
-                //ByteSource.Util.bytes(user.getCredentialsSalt()),//salt=username+salt
+                ByteSource.Util.bytes(user.getUserName()),//salt=username+salt
                 getName()  //realm name
         );
         return authenticationInfo;

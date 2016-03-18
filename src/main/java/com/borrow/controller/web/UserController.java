@@ -34,15 +34,16 @@ public class UserController {
         return "login";
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/login")
+    @RequestMapping(method = RequestMethod.POST, value = "/submit")
     @ResponseBody
-    public ResponseEntity login(@RequestBody UserParam suerParam) {
+    public ResponseEntity login(String userName,String passWord) {
         Subject currentUser = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(suerParam.getUsername(), suerParam.getPassword());
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, passWord);
         token.setRememberMe(false);
         try {
             currentUser.login(token);
         } catch (Exception e) {
+            e.printStackTrace();
             return ResponseEntity.badRequest().body("");
         }
         return ResponseEntity.ok("");

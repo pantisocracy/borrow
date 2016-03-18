@@ -194,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  </div>
 						</div>
 			    </li>		
-				<li><a class="color4" href="login.jsp">Login</a></li>
+				<li><a class="color4" href="login.html">Login</a></li>
 				<li><a class="color6" href="contact.jsp">Contact</a></li>
 			  </ul> 
 			</div>

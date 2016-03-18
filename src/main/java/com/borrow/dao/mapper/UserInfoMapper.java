@@ -36,9 +36,9 @@ public interface UserInfoMapper extends BaseMapper<UserInfo,Integer>{
     @Select({
             "select",
             "id, user_name, sex, age, mobile, school_id, identity, apply_account, add_time, ",
-            "update_time, type",
+            "update_time, type, pass_word",
             "from users",
-            "whrere user_name = # {userName,jdbcType=VARCHAR}"
+            "where user_name = #{userName,jdbcType=VARCHAR}"
     })
     @ResultMap("BaseResultMap")
     UserInfo findByUserName(String userName);
