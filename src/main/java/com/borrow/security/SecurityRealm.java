@@ -26,20 +26,20 @@ public class SecurityRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String username = (String)token.getPrincipal();
-        UserInfo user = null;//userService.findByUsername(username);
+        UserInfo user = userService.findByUserName(username);
         if(user ==null){
             throw new UnknownAccountException();//没找到帐号
         }
 
-       /* if(Boolean.TRUE.equals(user.getLocked())) {
+        /*if(Boolean.TRUE.equals(user.getLocked())) {
             throw new LockedAccountException(); //帐号锁定
         }*/
 
         //交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配，如果觉得人家的不好可以自定义实现
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                null,//user.getUsername(), //用户名
-                null,//user.getPassword(), //密码
-                null,//ByteSource.Util.bytes(user.getCredentialsSalt()),//salt=username+salt
+                user.getUserName(), //用户名
+                user.getPassWord(), //密码
+                //ByteSource.Util.bytes(user.getCredentialsSalt()),//salt=username+salt
                 getName()  //realm name
         );
         return authenticationInfo;

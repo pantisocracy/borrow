@@ -1,19 +1,19 @@
 package com.borrow.controller.web;
 
-import com.borrow.entity.UserInfo;
+import com.borrow.param.UserParam;
 import com.borrow.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Lipengfei on 2015/6/24.
@@ -25,44 +25,27 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Transactional
-    @RequestMapping("/save")
-    @ResponseBody
-    public void save() {
-        UserInfo userInfo = new UserInfo();
-        userInfo.setUpdateTime(new Date());
-        userInfo.setType(2);
-        userInfo.setApplyAccount(1);
-        userInfo.setIdentity("dsddsd");
-        userInfo.setAddTime(new Date());
-        userInfo.setAge(12);
-        userInfo.setMobile("18727151796");
-        userInfo.setSchoolId(11);
-        userInfo.setSex(1);
-        userInfo.setUserName("admin");
-        userService.save(userInfo);
-    }
-
-    @Transactional
-    @RequestMapping("/find")
-    @ResponseBody
-    public String sayHello() {
-        PageRequest pageRequest = new PageRequest(0, 10);
-        Page page = userService.findAllByPage(pageRequest);
-        System.out.println(page.getContent().toString());
-        List<UserInfo> list = userService.findAll();
-        return list.toString();
-    }
-    //跳转到jsp页面
-    @RequestMapping("/jsp")
-    public String getJsp() {
-        return "index";
-    }
-
+    /**
+     * 跳转到登陆页面
+     * @return
+     */
     @RequestMapping("/login")
     public String login(){
         return "login";
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "/login")
+    @ResponseBody
+    public ResponseEntity login(@RequestBody UserParam suerParam) {
+        Subject currentUser = SecurityUtils.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(suerParam.getUsername(), suerParam.getPassword());
+        token.setRememberMe(false);
+        try {
+            currentUser.login(token);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("");
+        }
+        return ResponseEntity.ok("");
+    }
 
 }

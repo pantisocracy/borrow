@@ -88,7 +88,7 @@
 
 
 
-           <table tableName="apply" domainObjectName="ApplyInfo"
+        <!--   <table tableName="apply" domainObjectName="ApplyInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
@@ -124,7 +124,7 @@
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
-           </table>
+           </table>-->
 
            <table tableName="users" domainObjectName="UserInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"

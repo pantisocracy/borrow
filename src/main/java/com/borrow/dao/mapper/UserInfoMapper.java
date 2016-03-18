@@ -19,21 +19,35 @@ public interface UserInfoMapper extends BaseMapper<UserInfo,Integer>{
         "sex, age, mobile, ",
         "school_id, identity, ",
         "apply_account, add_time, ",
-        "update_time, type)",
+        "update_time, type, ",
+        "pass_word)",
         "values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, ",
         "#{sex,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR}, ",
         "#{schoolId,jdbcType=INTEGER}, #{identity,jdbcType=VARCHAR}, ",
         "#{applyAccount,jdbcType=INTEGER}, #{addTime,jdbcType=TIMESTAMP}, ",
-        "#{updateTime,jdbcType=TIMESTAMP}, #{type,jdbcType=INTEGER})"
+        "#{updateTime,jdbcType=TIMESTAMP}, #{type,jdbcType=INTEGER}, ",
+        "#{passWord,jdbcType=VARCHAR})"
     })
     int insert(UserInfo record);
 
     int insertSelective(UserInfo record);
 
+
+    @Select({
+            "select",
+            "id, user_name, sex, age, mobile, school_id, identity, apply_account, add_time, ",
+            "update_time, type",
+            "from users",
+            "whrere user_name = # {userName,jdbcType=VARCHAR}"
+    })
+    @ResultMap("BaseResultMap")
+    UserInfo findByUserName(String userName);
+
+
     @Select({
         "select",
         "id, user_name, sex, age, mobile, school_id, identity, apply_account, add_time, ",
-        "update_time, type",
+        "update_time, type, pass_word",
         "from users",
         "where id = #{id,jdbcType=INTEGER}"
     })
@@ -53,7 +67,8 @@ public interface UserInfoMapper extends BaseMapper<UserInfo,Integer>{
           "apply_account = #{applyAccount,jdbcType=INTEGER},",
           "add_time = #{addTime,jdbcType=TIMESTAMP},",
           "update_time = #{updateTime,jdbcType=TIMESTAMP},",
-          "type = #{type,jdbcType=INTEGER}",
+          "type = #{type,jdbcType=INTEGER},",
+          "pass_word = #{passWord,jdbcType=VARCHAR}",
         "where id = #{id,jdbcType=INTEGER}"
     })
     int updateByPrimaryKey(UserInfo record);

@@ -30,4 +30,9 @@ public class UserService {
         return usersInfoMapper.findAllByPage(pageable);
     }
 
+
+    public UserInfo findByUserName(String userName){
+        return usersInfoMapper.findByUserName(userName);
+    }
+
 }

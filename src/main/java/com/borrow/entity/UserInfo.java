@@ -25,7 +25,9 @@ public class UserInfo {
 
     private Integer type;
 
-    public UserInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type) {
+    private String passWord;
+
+    public UserInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type, String passWord) {
         this.id = id;
         this.userName = userName;
         this.sex = sex;
@@ -37,6 +39,7 @@ public class UserInfo {
         this.addTime = addTime;
         this.updateTime = updateTime;
         this.type = type;
+        this.passWord = passWord;
     }
 
     public UserInfo() {
@@ -129,5 +132,31 @@ public class UserInfo {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord == null ? null : passWord.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", mobile='" + mobile + '\'' +
+                ", schoolId=" + schoolId +
+                ", identity='" + identity + '\'' +
+                ", applyAccount=" + applyAccount +
+                ", addTime=" + addTime +
+                ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", passWord='" + passWord + '\'' +
+                '}';
     }
 }
