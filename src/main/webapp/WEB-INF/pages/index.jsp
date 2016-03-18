@@ -4,10 +4,10 @@
 <title>Home</title>
 <link href="http://localhost:8080/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/../js/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="/../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,10 +18,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
 <!-- start menu -->
-<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/memenu.js"></script>
+<link href="/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>
-<script src="js/simpleCart.min.js"> </script>
+<script src="/js/simpleCart.min.js"> </script>
 </head>
 <body>
 <!--header-->
@@ -50,8 +50,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			
 <!-- search-scripts -->
-					<script src="js/classie.js"></script>
-					<script src="js/uisearch.js"></script>
+					<script src="/js/classie.js"></script>
+					<script src="/js/uisearch.js"></script>
 						<script>
 							new UISearch( document.getElementById( 'sb-search' ) );
 						</script>
@@ -205,7 +205,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="banner">
 		<div class="container">
-			  <script src="js/responsiveslides.min.js"></script>
+			  <script src="/js/responsiveslides.min.js"></script>
   <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -260,7 +260,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="content-top-bottom">
 				<h2>Featured PRODUCTS</h2>
 				<div class="col-md-6 men">
-					<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t1.jpg" alt="">
+					<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t1.jpg" alt="">
 						<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in   b-delay03 ">
 												<span>TRIBECA LIVING</span>	
@@ -272,7 +272,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6">
 					<div class="col-md1 ">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t2.jpg" alt="">
+						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t2.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in1   b-delay03 ">
 												<span>CLARISSA</span>	
@@ -283,7 +283,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md2">
 						<div class="col-md-6 men1">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t3.jpg" alt="">
+							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t3.jpg" alt="">
 									<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 												<span>COLORMATE</span>	
@@ -293,7 +293,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 						</div>
 						<div class="col-md-6 men2">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t4.jpg" alt="">
+							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t4.jpg" alt="">
 									<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 												<span>HERLEQUIN</span>	
@@ -311,7 +311,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h1>NEW PRODUCTS</h1>
 				<div class="grid-in">
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi.jpg" alt="">
+						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/pi.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
 									<span>TRIBECA LIVING</span>
@@ -325,7 +325,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
 					</div>
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi1.jpg" alt="">
+						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/pi1.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
 												<span>ESSENTIAL</span>	
@@ -336,7 +336,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
 					</div>
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi2.jpg" alt="">
+						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/pi2.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
 												<span>CLARISSA</span>	
@@ -347,7 +347,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
 					</div>
 					<div class="col-md-3 grid-top">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi4.jpg" alt="">
+						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/pi4.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
 												<span>LITTLE HOME</span>	
@@ -417,7 +417,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<div class="footer-class">
-		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+		<p>Copyright &copy; 2015.Company name All rights reserved.</p>
 		</div>
 		</div>
 </body>
