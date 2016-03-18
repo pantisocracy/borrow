@@ -27,10 +27,6 @@ public class IndexController {
      */
     @RequestMapping("/index")
     public String index(){
-        List<UserInfo> list = userService.findAll();
-        for (UserInfo userInfo:list){
-            System.out.println(userInfo.toString());
-        }
         return "index";
     }
 
