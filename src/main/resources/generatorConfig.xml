@@ -88,45 +88,45 @@
 
 
 
-           <table tableName="t_apply" domainObjectName="ApplyInfo"
+           <table tableName="apply" domainObjectName="ApplyInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
 
-           <table tableName="t_area" domainObjectName="AreaInfo"
+           <table tableName="area" domainObjectName="AreaInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
 
-           <table tableName="t_course" domainObjectName="CourseInfo"
+           <table tableName="course" domainObjectName="CourseInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
-           <table tableName="t_provider" domainObjectName="ProviderInfo"
+           <table tableName="provider" domainObjectName="ProviderInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
-           <table tableName="t_school" domainObjectName="SchoolInfo"
+           <table tableName="school" domainObjectName="SchoolInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
-           <table tableName="t_stages_type" domainObjectName="StagesTypeInfo"
+           <table tableName="stages_type" domainObjectName="StagesTypeInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
            </table>
 
-           <table tableName="t_users" domainObjectName="UsersInfo"
+           <table tableName="users" domainObjectName="UsersInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>
