@@ -1,4 +1,4 @@
-package com.borrow.controller;
+package com.borrow.controller.web;
 
 import com.borrow.entity.UserInfo;
 import com.borrow.service.UserService;
@@ -19,10 +19,9 @@ import java.util.List;
  * Created by Lipengfei on 2015/6/24.
  */
 @Controller
-@RequestMapping("/user")
+@RequestMapping("user")
 public class UserController {
     private final static Logger logger = LoggerFactory.getLogger(UserController.class);
-
     @Autowired
     private UserService userService;
 
@@ -59,5 +58,11 @@ public class UserController {
     public String getJsp() {
         return "index";
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
 
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<link href="http://localhost:8080/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>Products</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/../js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="/../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -193,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						  </div>
 						</div>
-			    </li>
+			    </li>		
 				<li><a class="color4" href="login.jsp">Login</a></li>
 				<li><a class="color6" href="contact.jsp">Contact</a></li>
 			  </ul> 
@@ -203,168 +203,124 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		</div>
 	</div>
-	<div class="banner">
+<!-- products -->
+	<!-- grow -->
+	<div class="grow">
 		<div class="container">
-			  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-			<div  id="top" class="callbacks_container">
-			<ul class="rslides" id="slider">
-			    <li>
-					
-						<div class="banner-text">
-							<h3>Lorem Ipsum is   </h3>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-						
-						</div>
-				
-				</li>
-				<li>
-					
-						<div class="banner-text">
-							<h3>There are many  </h3>
-						<p>Popular belief Contrary to , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-												
-
-						</div>
-					
-				</li>
-				<li>
-						<div class="banner-text">
-							<h3>Sed ut perspiciatis</h3>
-						<p>Lorem Ipsum is not simply random text. Contrary to popular belief, It has roots in a piece of classical Latin literature from 45 BC.</p>
-								
-
-						</div>
-					
-				</li>
-			</ul>
+			<h2>Products</h2>
 		</div>
-
 	</div>
-	</div>
-
-<!--content-->
-<div class="container">
-	<div class="cont">
-		<div class="content">
-			<div class="content-top-bottom">
-				<h2>Featured PRODUCTS</h2>
-				<div class="col-md-6 men">
-					<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t1.jpg" alt="">
-						<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in   b-delay03 ">
-												<span>TRIBECA LIVING</span>	
-											</h3>
-										</div>
-					</a>
-					
-					
-				</div>
-				<div class="col-md-6">
-					<div class="col-md1 ">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t2.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in1   b-delay03 ">
-												<span>CLARISSA</span>	
-											</h3>
-										</div>
-						</a>
-						
-					</div>
-					<div class="col-md2">
-						<div class="col-md-6 men1">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t3.jpg" alt="">
-									<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
-												<span>COLORMATE</span>	
-											</h3>
-										</div>
-							</a>
-							
-						</div>
-						<div class="col-md-6 men2">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t4.jpg" alt="">
-									<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
-												<span>HERLEQUIN</span>	
-											</h3>
-										</div>
-							</a>
-							
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="content-top">
-				<h1>NEW PRODUCTS</h1>
-				<div class="grid-in">
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>TRIBECA LIVING</span>
-									
-								</h3>
+	<!-- grow -->
+	<div class="pro-du">
+		<div class="container">
+			<div class="col-md-9 product1">
+				<div class=" bottom-product">
+					<div class="col-md-6 bottom-cd simpleCart_shelfItem">
+						<div class="product-at ">
+							<a href="single.jsp"><img class="img-responsive" src="images/pi3.jpg" alt="">
+							<div class="pro-grid">
+										<span class="buy-in">Buy Now</span>
 							</div>
-						</a>
+						</a>	
+						</div>
+						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
+						<div class="ca-rt">
+							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 bottom-cd simpleCart_shelfItem">
+						<div class="product-at ">
+							<a href="single.jsp"><img class="img-responsive" src="images/pi1.jpg" alt="">
+							<div class="pro-grid">
+										<span class="buy-in">Buy Now</span>
+							</div>
+						</a>	
+						</div>
+						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
+						<div class="ca-rt">
+							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
+						</div>
+						<div class="clearfix"></div>					
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+				<div class=" bottom-product">
+					<div class="col-md-6 bottom-cd simpleCart_shelfItem">
+						<div class="product-at ">
+							<a href="single.jsp"><img class="img-responsive" src="images/pi5.jpg" alt="">
+							<div class="pro-grid">
+										<span class="buy-in">Buy Now</span>
+							</div>
+						</a>	
+						</div>
+						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
+						<div class="ca-rt">
+							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
+						</div>
+						<div class="clearfix"></div>					
+					</div>
+					<div class="col-md-6 bottom-cd simpleCart_shelfItem">
+						<div class="product-at ">
+							<a href="single.jsp"><img class="img-responsive" src="images/pi.jpg" alt="">
+							<div class="pro-grid">
+										<span class="buy-in">Buy Now</span>
+							</div>
+						</a>	
+						</div>
+						<p class="tun"><span>Lorem ipsum establish</span><br>CLARISSA</p>
+						<div class="ca-rt">
+							<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>						
+						</div>
+						<div class="clearfix"></div>					
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+					
 				
-
-					<p><a href="single.jsp">TRIBECA LIVING</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+				</div>
+			<div class="col-md-3 prod-rgt">
+				<div class=" pro-tp">
+					<div class="pl-lft">
+						<a href="single.jsp"><img class="img-responsive" src="images/l2.jpg" alt=""></a>
 					</div>
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi1.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>ESSENTIAL</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">ESSENTIAL</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+					<div class="pl-rgt">
+						<h6><a href="single.jsp">TRIBECA LIVING</a></h6>
+						<p><a href="single.jsp">450$</a></p>
 					</div>
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi2.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>CLARISSA</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">CLARISSA</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+						<div class="clearfix"></div>
+				</div>
+				<div class=" pro-tp">
+					<div class="pl-lft">
+						<a href="single.jsp"><img class="img-responsive" src="images/l3.jpg" alt=""></a>
 					</div>
-					<div class="col-md-3 grid-top">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi4.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>LITTLE HOME</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">LITTLE HOME</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+					<div class="pl-rgt">
+						<h6><a href="single.jsp">TRIBECA LIVING</a></h6>
+						<p><a href="single.jsp">450$</a></p>
 					</div>
-							<div class="clearfix"> </div>
+						<div class="clearfix"></div>
+				</div>
+				<div class=" pro-tp">
+					<div class="pl-lft">
+						<a href="single.jsp"><img class="img-responsive" src="images/l1.jpg" alt=""></a>
+					</div>
+					<div class="pl-rgt">
+						<h6><a href="single.jsp">TRIBECA LIVING</a></h6>
+						<p><a href="single.jsp">450$</a></p>
+					</div>
+						<div class="clearfix"></div>
+				</div>
+				<div class="pr-btm">
+				<h4>What Our Client Say</h4>
+					<img class="img-responsive" src="images/pi.jpg" alt="">
+					<h6>John</h6>
+					<p>Lorem Ipsum is simply dummy text of the printing industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 				</div>
 			</div>
+				<div class="clearfix"></div>
 		</div>
-	<!----->
 	</div>
-	<!---->
-</div>
+<!-- products -->
 <div class="footer">
 				<div class="container">
 			<div class="footer-top-at">

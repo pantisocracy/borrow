@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<link href="http://localhost:8080/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>Contact</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/../js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="/../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="checkout.jsp">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> </div>
-							<img src="/images/cart.png" alt=""/></h3>
+							<img src="images/cart.png" alt=""/></h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 
@@ -193,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						  </div>
 						</div>
-			    </li>
+			    </li>		
 				<li><a class="color4" href="login.jsp">Login</a></li>
 				<li><a class="color6" href="contact.jsp">Contact</a></li>
 			  </ul> 
@@ -203,168 +203,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		</div>
 	</div>
-	<div class="banner">
+	<!-- grow -->
+	<div class="grow">
 		<div class="container">
-			  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
-			<div  id="top" class="callbacks_container">
-			<ul class="rslides" id="slider">
-			    <li>
-					
-						<div class="banner-text">
-							<h3>Lorem Ipsum is   </h3>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-						
-						</div>
-				
-				</li>
-				<li>
-					
-						<div class="banner-text">
-							<h3>There are many  </h3>
-						<p>Popular belief Contrary to , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-												
-
-						</div>
-					
-				</li>
-				<li>
-						<div class="banner-text">
-							<h3>Sed ut perspiciatis</h3>
-						<p>Lorem Ipsum is not simply random text. Contrary to popular belief, It has roots in a piece of classical Latin literature from 45 BC.</p>
-								
-
-						</div>
-					
-				</li>
-			</ul>
+			<h2>Contact</h2>
 		</div>
-
 	</div>
-	</div>
-
+	<!-- grow -->
 <!--content-->
-<div class="container">
-	<div class="cont">
-		<div class="content">
-			<div class="content-top-bottom">
-				<h2>Featured PRODUCTS</h2>
-				<div class="col-md-6 men">
-					<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t1.jpg" alt="">
-						<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in   b-delay03 ">
-												<span>TRIBECA LIVING</span>	
-											</h3>
-										</div>
-					</a>
+<div class="contact">
+			
+			<div class="container">
+			<div class="contact-form">
+				
+				<div class="col-md-8 contact-grid">
+					<form>	
+						<input type="text" value="Name" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Name';}">
 					
-					
-				</div>
-				<div class="col-md-6">
-					<div class="col-md1 ">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t2.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in1   b-delay03 ">
-												<span>CLARISSA</span>	
-											</h3>
-										</div>
-						</a>
+						<input type="text" value="Email" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Email';}">
+						<input type="text" value="Subject" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='Subject';}">
 						
-					</div>
-					<div class="col-md2">
-						<div class="col-md-6 men1">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t3.jpg" alt="">
-									<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
-												<span>COLORMATE</span>	
-											</h3>
-										</div>
-							</a>
-							
+						<textarea cols="77" rows="6" value=" " onFocus="this.value='';" onBlur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+						<div class="send">
+							<input type="submit" value="Send">
 						</div>
-						<div class="col-md-6 men2">
-							<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/t4.jpg" alt="">
-									<div class="b-wrapper">
-											<h3 class="b-animate b-from-top top-in2   b-delay03 ">
-												<span>HERLEQUIN</span>	
-											</h3>
-										</div>
-							</a>
-							
+					</form>
+				</div>
+				<div class="col-md-4 contact-in">
+
+						<div class="address-more">
+						<h4>Address</h4>
+							<p>The company name,</p>
+							<p>Lorem ipsum dolor,</p>
+							<p>Glasglow Dr 40 Fe 72. </p>
 						</div>
-						<div class="clearfix"> </div>
-					</div>
+						<div class="address-more">
+						<h4>Address1</h4>
+							<p>Tel:1115550001</p>
+							<p>Fax:190-4509-494</p>
+							<p>Email:<a href="mailto:contact@example.com"> contact@example.com</a></p>
+						</div>
+					
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="content-top">
-				<h1>NEW PRODUCTS</h1>
-				<div class="grid-in">
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>TRIBECA LIVING</span>
-									
-								</h3>
-							</div>
-						</a>
-				
-
-					<p><a href="single.jsp">TRIBECA LIVING</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-					</div>
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi1.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>ESSENTIAL</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">ESSENTIAL</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-					</div>
-					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi2.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>CLARISSA</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">CLARISSA</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-					</div>
-					<div class="col-md-3 grid-top">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="images/pi4.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>LITTLE HOME</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.jsp">LITTLE HOME</a></p>
-					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-					</div>
-							<div class="clearfix"> </div>
-				</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
 			</div>
 		</div>
-	<!----->
+		
 	</div>
-	<!---->
-</div>
+<!--//content-->
 <div class="footer">
 				<div class="container">
 			<div class="footer-top-at">
