@@ -395,7 +395,7 @@ height: 35px;
 }
 .content {
     position: absolute;
-    top: -62px;
+    top: 0px;
     background-color: #fff;
     padding: 2em;
 }
@@ -613,6 +613,7 @@ height: 35px;
 /*--footer--*/
 .footer{
 	background:#141414;
+	margin-top: 15rem;
 }
 .amet-sed h4{
 	font-size: 1.5em;
