@@ -36,12 +36,6 @@ public class SecurityRealm extends AuthorizingRealm {
         }*/
 
         //交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配，如果觉得人家的不好可以自定义实现
-        SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                user.getUserName(), //用户名
-                user.getPassWord(), //密码
-                ByteSource.Util.bytes(user.getUserName()),//salt=username+salt
-                getName()  //realm name
-        );
-        return authenticationInfo;
+        return new SimpleAuthenticationInfo(user, user.getUserName(), ByteSource.Util.bytes(user.getPassWord()),getName());
     }
 }

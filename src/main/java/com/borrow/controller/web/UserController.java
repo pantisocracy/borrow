@@ -4,6 +4,7 @@ import com.borrow.param.UserParam;
 import com.borrow.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,8 +39,8 @@ public class UserController {
     @ResponseBody
     public ResponseEntity login(String userName,String passWord) {
         Subject currentUser = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(userName, passWord);
-        token.setRememberMe(false);
+        Md5Hash md5Hash = new Md5Hash(passWord);
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, md5Hash.toHex(), false);
         try {
             currentUser.login(token);
         } catch (Exception e) {
