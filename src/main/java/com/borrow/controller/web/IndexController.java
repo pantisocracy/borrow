@@ -69,4 +69,43 @@ public class IndexController {
         return "single";
     }
 
+
+    /**
+     * 查询我的课程列表
+     * @parameter  userId 用户编号
+     * @return
+     */
+    @RequestMapping("/checkout")
+    public String checkout(){
+        return "checkout";
+    }
+
+    /**
+     * 删除我的课程（并根据用户编号重定向到用户课程列表:删除之前程序需验证是否是真实用户）
+     * @parameter   id = 课程编号
+     * @return
+     */
+    @RequestMapping("/checkoutDelete")
+    public String checkoutDelete(){
+        return "checkout";
+    }
+
+    /**
+     * 注册页面
+     * @return
+     */
+    @RequestMapping("/register")
+    public String register(){
+        return "register";
+    }
+
+    /**
+     * 添加用户（成功后重定向到index）
+     * @return
+     */
+    @RequestMapping("/addUser")
+    public String addUser(){
+        return "index";
+    }
+
 }

@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
       <div class="header-left">
 
-        <div class="search-box">
+<%--        <div class="search-box">
           <div id="sb-search" class="sb-search">
             <form>
               <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <span class="sb-icon-search"> </span>
             </form>
           </div>
-        </div>
+        </div>--%>
 
         <!-- search-scripts -->
         <script src="/js/classie.js"></script>
@@ -63,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <span class="simpleCart_total"></span> </div>
                 <img src="/images/cart.png" alt=""/></h3>
             </a>
-            <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+            <p><a href="/web/manLogin"  class="simpleCart_empty">登录</a>||<a href="/web/register" class="simpleCart_empty">注册</a></p>
 
           </div>
         </div>
@@ -122,6 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
           </li>
           <li><a class="color6" href="/web/products">推荐课程</a></li>
+          <li><a class="color6" href="/web/checkout">我的课程</a></li>
         </ul>
       </div>
 
