@@ -60,8 +60,8 @@ public class IndexController {
     }
 
     /**
-     * 前台查询推荐课程或者
-     * @parameter  typeid =(1：查询最新课程，2：查询推荐课程)
+     * 查询课程详细内容 （并查询推荐课程）
+     * @parameter  id 课程编号
      * @return
      */
     @RequestMapping("/single")
