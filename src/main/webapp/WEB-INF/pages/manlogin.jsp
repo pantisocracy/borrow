@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8"%>
 <html>
 <head>
 <title>Login</title>
@@ -194,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  </div>
 						</div>
 			    </li>		
-				<li><a class="color4" href="login.html">Login</a></li>
+				<li><a class="color4" href="manLogin.jsp">Login</a></li>
 				<li><a class="color6" href="contact.jsp">Contact</a></li>
 			  </ul> 
 			</div>
@@ -215,7 +216,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="account">
 		<div class="account-pass">
 		<div class="col-md-8 account-top">
-			<form method="post" action="/user/submit">
+			<form method="post" action="/web/manSubmit">
 				
 			<div> 	
 				<span>Email</span>
