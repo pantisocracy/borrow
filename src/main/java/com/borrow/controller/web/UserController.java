@@ -1,6 +1,5 @@
 package com.borrow.controller.web;
 
-import com.borrow.param.UserParam;
 import com.borrow.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -11,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,8 +37,7 @@ public class UserController {
     @ResponseBody
     public ResponseEntity login(String userName,String passWord) {
         Subject currentUser = SecurityUtils.getSubject();
-        Md5Hash md5Hash = new Md5Hash(passWord);
-        UsernamePasswordToken token = new UsernamePasswordToken(userName, md5Hash.toHex(), false);
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, passWord);
         try {
             currentUser.login(token);
         } catch (Exception e) {

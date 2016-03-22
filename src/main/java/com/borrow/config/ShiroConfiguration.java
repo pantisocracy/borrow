@@ -1,6 +1,7 @@
 package com.borrow.config;
 
 import com.borrow.security.SecurityRealm;
+import com.borrow.security.ShiroDatabaseRealm;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
@@ -26,23 +27,13 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfiguration {
-    private static final Logger logger = LoggerFactory.getLogger(ShiroConfiguration.class);
-
     private static Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 
-    //Realm实现
-    @Bean(name = "SecurityRealm")
-    public SecurityRealm getShiroRealm(){
-        SecurityRealm securityRealm = new SecurityRealm();
-        HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
-        credentialsMatcher.setHashAlgorithmName("md5");
-        credentialsMatcher.setHashIterations(2);
-        credentialsMatcher.setStoredCredentialsHexEncoded(true);
-        securityRealm.setCredentialsMatcher(credentialsMatcher);
-        return securityRealm;
+    @Bean(name = "shiroDatabaseRealm")
+    public ShiroDatabaseRealm getShiroRealm() {
+        return new ShiroDatabaseRealm();
     }
 
-    //shiro缓存
     @Bean(name = "shiroEhcacheManager")
     public EhCacheManager getEhCacheManager() {
         EhCacheManager em = new EhCacheManager();
@@ -50,13 +41,11 @@ public class ShiroConfiguration {
         return em;
     }
 
-    //Shiro生命周期处理器
     @Bean(name = "lifecycleBeanPostProcessor")
     public LifecycleBeanPostProcessor getLifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();
     }
 
-    //AOP式方法级权限检查
     @Bean
     public DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator daap = new DefaultAdvisorAutoProxyCreator();
@@ -64,58 +53,10 @@ public class ShiroConfiguration {
         return daap;
     }
 
-    //会话ID生成器
-    @Bean(name = "javaUuidSessionIdGenerator")
-    public JavaUuidSessionIdGenerator getJavaUuidSessionIdGenerator() {
-        return new JavaUuidSessionIdGenerator();
-    }
-
-    //会话DAO
-    @Bean(name = "enterpriseCacheSessionDAO")
-    public EnterpriseCacheSessionDAO getEnterpriseCacheSessionDAO() {
-        EnterpriseCacheSessionDAO enterpriseCacheSessionDAO = new EnterpriseCacheSessionDAO();
-        enterpriseCacheSessionDAO.setActiveSessionsCacheName("shiro-activeSessionCache");
-        enterpriseCacheSessionDAO.setSessionIdGenerator(getJavaUuidSessionIdGenerator());
-        return enterpriseCacheSessionDAO;
-    }
-
-    //会话Cookie模板
-    @Bean(name = "simpleCookie")
-    public SimpleCookie getSimpleCookie() {
-        SimpleCookie simpleCookie = new SimpleCookie("mc.session.id");
-        simpleCookie.setHttpOnly(true);
-        simpleCookie.setMaxAge(-1);
-        return simpleCookie;
-    }
-
-    //会话验证调度器
-    @Bean(name = "quartzSessionValidationScheduler")
-    public QuartzSessionValidationScheduler getQuartzSessionValidationScheduler() {
-        QuartzSessionValidationScheduler quartzSessionValidationScheduler = new QuartzSessionValidationScheduler();
-        quartzSessionValidationScheduler.setSessionValidationInterval(1800000);
-        quartzSessionValidationScheduler.setSessionManager(getDefaultWebSessionManager());
-        return quartzSessionValidationScheduler;
-    }
-
-    // 会话管理器
-    @Bean(name="defaultWebSessionManager")
-    public DefaultWebSessionManager getDefaultWebSessionManager(){
-        DefaultWebSessionManager defaultWebSessionManager = new DefaultWebSessionManager();
-        defaultWebSessionManager.setGlobalSessionTimeout(1800000);
-        defaultWebSessionManager.setDeleteInvalidSessions(true);
-        defaultWebSessionManager.setSessionValidationSchedulerEnabled(true);
-//        defaultWebSessionManager.setSessionValidationScheduler(getQuartzSessionValidationScheduler());
-        defaultWebSessionManager.setSessionDAO(getEnterpriseCacheSessionDAO());
-        defaultWebSessionManager.setSessionIdCookie(getSimpleCookie());
-        defaultWebSessionManager.setSessionIdCookieEnabled(true);
-        return defaultWebSessionManager;
-    }
-
     @Bean(name = "securityManager")
     public DefaultWebSecurityManager getDefaultWebSecurityManager() {
         DefaultWebSecurityManager dwsm = new DefaultWebSecurityManager();
         dwsm.setRealm(getShiroRealm());
-        dwsm.setSessionManager(getDefaultWebSessionManager());
         dwsm.setCacheManager(getEhCacheManager());
         return dwsm;
     }
