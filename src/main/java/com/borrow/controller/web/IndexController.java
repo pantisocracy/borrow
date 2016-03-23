@@ -87,22 +87,4 @@ public class IndexController {
         return "checkout";
     }
 
-    /**
-     * 注册页面
-     * @return
-     */
-    @RequestMapping("/register")
-    public String register(){
-        return "register";
-    }
-
-    /**
-     * 添加用户（成功后重定向到index）
-     * @return
-     */
-    @RequestMapping("/addUser")
-    public String addUser(){
-        return "index";
-    }
-
 }

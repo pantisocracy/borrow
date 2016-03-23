@@ -69,6 +69,7 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/web/**", "anon");//不需要权限时的访问连接直接不验证权限
         filterChainDefinitionMap.put("/user/login", "anon");//登陆连接也直接不验证
         filterChainDefinitionMap.put("/user/submit", "anon");//提交登陆连接直接不验证
+        filterChainDefinitionMap.put("/user/userRegister*", "anon");//注册
 
         //静态资源
         filterChainDefinitionMap.put("/js/**", "anon");
