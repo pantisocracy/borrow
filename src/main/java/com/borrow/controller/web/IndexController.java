@@ -4,13 +4,10 @@ package com.borrow.controller.web;
  * Created by lbc on 16/3/18.
  */
 
-import com.borrow.entity.UserInfo;
 import com.borrow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 /**
  * web目录前台
@@ -80,24 +77,6 @@ public class IndexController {
     @RequestMapping("/checkoutDelete")
     public String checkoutDelete(){
         return "checkout";
-    }
-
-    /**
-     * 注册页面
-     * @return
-     */
-    @RequestMapping("/register")
-    public String register(){
-        return "register";
-    }
-
-    /**
-     * 添加用户（成功后重定向到index）
-     * @return
-     */
-    @RequestMapping("/addUser")
-    public String addUser(){
-        return "index";
     }
 
 }

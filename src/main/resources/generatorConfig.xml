@@ -126,7 +126,24 @@
                <property name="useActualColumnNames" value="false"/>
            </table>-->
 
-           <table tableName="users" domainObjectName="UserInfo"
+          <!-- <table tableName="users" domainObjectName="UserInfo"
+                  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+                  enableSelectByExample="false" selectByExampleQueryId="false" >
+               <property name="useActualColumnNames" value="false"/>
+           </table>
+
+           <table tableName="permission" domainObjectName="PermissionInfo"
+                  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+                  enableSelectByExample="false" selectByExampleQueryId="false" >
+               <property name="useActualColumnNames" value="false"/>
+           </table>
+-->
+           <!--<table tableName="role" domainObjectName="RoleInfo"
+                  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+                  enableSelectByExample="false" selectByExampleQueryId="false" >
+               <property name="useActualColumnNames" value="false"/>
+           </table>-->
+           <table tableName="role_permission" domainObjectName="RolePermissionInfo"
                   enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                   enableSelectByExample="false" selectByExampleQueryId="false" >
                <property name="useActualColumnNames" value="false"/>

@@ -1,0 +1,14 @@
+接口信息说明
+
+    1,用户注册页面跳转
+        user/userRegister    直接返回注册页面
+    2,用户注册信息提交接口
+          输入参数
+                userName    用户名
+                passWord    密码
+                mobile      手机号
+          返回结果
+            根据code判断是否注册成功
+    3,
+
+

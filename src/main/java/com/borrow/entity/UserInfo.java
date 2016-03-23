@@ -27,7 +27,9 @@ public class UserInfo {
 
     private String passWord;
 
-    public UserInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type, String passWord) {
+    private Integer roleId;
+
+    public UserInfo(Integer id, String userName, Integer sex, Integer age, String mobile, Integer schoolId, String identity, Integer applyAccount, Date addTime, Date updateTime, Integer type, String passWord, Integer roleId) {
         this.id = id;
         this.userName = userName;
         this.sex = sex;
@@ -40,6 +42,7 @@ public class UserInfo {
         this.updateTime = updateTime;
         this.type = type;
         this.passWord = passWord;
+        this.roleId = roleId;
     }
 
     public UserInfo() {
@@ -142,21 +145,11 @@ public class UserInfo {
         this.passWord = passWord == null ? null : passWord.trim();
     }
 
-    @Override
-    public String toString() {
-        return "UserInfo{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", sex=" + sex +
-                ", age=" + age +
-                ", mobile='" + mobile + '\'' +
-                ", schoolId=" + schoolId +
-                ", identity='" + identity + '\'' +
-                ", applyAccount=" + applyAccount +
-                ", addTime=" + addTime +
-                ", updateTime=" + updateTime +
-                ", type=" + type +
-                ", passWord='" + passWord + '\'' +
-                '}';
+    public Integer getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 }
