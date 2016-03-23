@@ -11,7 +11,7 @@
  Target Server Version : 50711
  File Encoding         : utf-8
 
- Date: 03/22/2016 21:28:18 PM
+ Date: 03/23/2016 18:33:13 PM
 */
 
 SET NAMES utf8;
@@ -152,15 +152,15 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户编号',
   `user_name` varchar(20) COLLATE utf8mb4_sinhala_ci NOT NULL COMMENT '用户名称',
-  `sex` int(11) NOT NULL COMMENT '性别',
-  `age` int(11) NOT NULL COMMENT '年龄',
+  `sex` int(11) DEFAULT NULL COMMENT '性别',
+  `age` int(11) DEFAULT NULL COMMENT '年龄',
   `mobile` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '手机号',
-  `school_id` int(11) NOT NULL COMMENT '学校编号',
-  `identity` varchar(20) COLLATE utf8mb4_sinhala_ci NOT NULL COMMENT '省份证号码',
-  `apply_account` int(11) NOT NULL COMMENT '申请汇款账户',
+  `school_id` int(11) DEFAULT NULL COMMENT '学校编号',
+  `identity` varchar(20) COLLATE utf8mb4_sinhala_ci DEFAULT NULL COMMENT '省份证号码',
+  `apply_account` int(11) DEFAULT NULL COMMENT '申请汇款账户',
   `add_time` datetime NOT NULL COMMENT '添加时间',
   `update_time` datetime NOT NULL COMMENT '更新时间',
-  `type` int(11) NOT NULL DEFAULT '0' COMMENT '用户类型 0:普通用户 1:管理员',
+  `type` int(11) DEFAULT '0' COMMENT '用户类型 0:普通用户 1:管理员',
   `pass_word` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '密码',
   `role_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
