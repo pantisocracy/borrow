@@ -3,7 +3,7 @@ package com.borrow.dao.mapper;
 import com.borrow.entity.RolePermissionInfo;
 import org.apache.ibatis.annotations.Insert;
 
-public interface RolePermissionInfoMapper extends BaseMapper<RolePermissionInfoMapper,Integer>{
+public interface RolePermissionInfoMapper{
     @Insert({
         "insert into role_permission (id, role_id, ",
         "permission_id)",

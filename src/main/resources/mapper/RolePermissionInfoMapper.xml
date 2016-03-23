@@ -33,17 +33,4 @@
       </if>
     </trim>
   </insert>
-
-  <select id="findAll" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from role_permission
-  </select>
-
-
-  <select id="findAllByPage" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from role_permission
-  </select>
 </mapper>
