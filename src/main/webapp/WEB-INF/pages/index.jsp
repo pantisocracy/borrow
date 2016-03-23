@@ -21,18 +21,18 @@
 			<ul class="rslides" id="slider">
 			    <li>
 
-						<div class="banner-text">
-							<h3>Lorem Ipsum is   </h3>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+						<div class="banner-text threed">
+							<h1 style="font-size: 50px;margin-top: 30px;">Solutions that you need! </h1>
+						<%--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>--%>
 
 						</div>
 
 				</li>
-				<li>
+				<%--<li>
 
 						<div class="banner-text">
 							<h3>There are many  </h3>
-						<p>Popular belief Contrary to , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+					&lt;%&ndash;	<p>Popular belief Contrary to , Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>&ndash;%&gt;
 
 
 						</div>
@@ -46,7 +46,7 @@
 
 						</div>
 
-				</li>
+				</li>--%>
 			</ul>
 		</div>
 
@@ -59,7 +59,7 @@
 		<div class="content">
 			<div class="content-top-bottom">
 				<h2>热门课程</h2>
-				<div class="col-md-6 men">
+				<%--<div class="col-md-6 men">
 					<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t1.jpg" alt="">
 						<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in   b-delay03 ">
@@ -69,6 +69,41 @@
 					</a>
 
 
+				</div>--%>
+				<div class="col-md-6">
+					<div class="col-md1 ">
+						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t2.jpg" alt="">
+							<div class="b-wrapper">
+								<h3 class="b-animate b-from-top top-in1   b-delay03 ">
+									<span>CLARISSA</span>
+								</h3>
+							</div>
+						</a>
+
+					</div>
+					<div class="col-md2">
+						<div class="col-md-6 men1">
+							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t3.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
+										<span>COLORMATE</span>
+									</h3>
+								</div>
+							</a>
+
+						</div>
+						<div class="col-md-6 men2">
+							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/t4.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
+										<span>HERLEQUIN</span>
+									</h3>
+								</div>
+							</a>
+
+						</div>
+						<div class="clearfix"> </div>
+					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="col-md1 ">

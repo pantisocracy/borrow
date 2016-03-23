@@ -32,15 +32,7 @@ public class IndexController {
 
     /**
      * 前台登录
-     * @return
-     */
-    @RequestMapping("/manLogin")
-    public String manLogin(){
-        return "manLogin";
-    }
-
-    /**
-     * 前台登录提交,登录成功后查询商品课程列表 1，查询最新课程 2，查询推荐课程（目前写死）
+      提交,登录成功后查询商品课程列表 1，查询最新课程 2，查询推荐课程（目前写死）
      * @return
      */
     @RequestMapping("/manSubmit")

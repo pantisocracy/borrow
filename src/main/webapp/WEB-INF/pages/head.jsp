@@ -25,7 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <!--header-->
 <div class="header">
-  <div class="header-top">
+<%--  <div class="header-top">
     <div class="container">
       <div class="social">
         <ul>
@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
       <div class="header-left">
 
-<%--        <div class="search-box">
+&lt;%&ndash;        <div class="search-box">
           <div id="sb-search" class="sb-search">
             <form>
               <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <span class="sb-icon-search"> </span>
             </form>
           </div>
-        </div>--%>
+        </div>&ndash;%&gt;
 
         <!-- search-scripts -->
         <script src="/js/classie.js"></script>
@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
 
     </div>
-  </div>
+  </div>--%>
   <div class="container">
     <div class="head-top">
       <div class="logo">
@@ -80,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class=" h_menu4">
         <ul class="memenu skyblue">
           <li><a class="color8" href="index">主页</a></li>
-          <li><a class="color1" href="/web/products">课程类型</a>
+          <li><a class="color1" href="/web/products">学校</a>
             <div class="mepanel">
               <div class="row">
                 <div class="col1">
@@ -121,8 +121,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </li>
 
           </li>
-          <li><a class="color6" href="/web/products">推荐课程</a></li>
-          <li><a class="color6" href="/web/checkout">我的课程</a></li>
+          <li><a class="color6" href="/web/products">课程</a></li>
+          <li><a class="color6" href="/web/checkout"> 关于我们</a></li>
         </ul>
       </div>
 
