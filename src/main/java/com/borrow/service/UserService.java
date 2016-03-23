@@ -23,6 +23,7 @@ public class UserService {
     }
 
     public List<UserInfo> findAll(){
+        //List<UserInfo> list = usersInfoMapper.selectAll();
         return usersInfoMapper.findAll();
     }
 
@@ -34,5 +35,6 @@ public class UserService {
     public UserInfo findByUserName(String userName){
         return usersInfoMapper.findByUserName(userName);
     }
+
 
 }

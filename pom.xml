@@ -25,6 +25,8 @@
         <es.version>2.1.0</es.version>
         <commons.httpclient.version>3.1</commons.httpclient.version>
         <shiro.version>1.2.4</shiro.version>
+        <mapper.version>3.3.6</mapper.version>
+        <pagehelper.version>4.1.1</pagehelper.version>
     </properties>
     <!--  <distributionManagement>
           <repository>
@@ -251,7 +253,7 @@
             <version>${shiro.version}</version>
         </dependency>
 
-
+        <!--工具-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -262,6 +264,21 @@
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
+
+
+        <!--分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+        <!--通用Mapper-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>${mapper.version}</version>
+        </dependency>
+
 
     </dependencies>
 

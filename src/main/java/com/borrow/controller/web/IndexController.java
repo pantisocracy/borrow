@@ -18,6 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
     @Autowired
     private UserService userService;
+    @RequestMapping("/findAll")
+    public void findAll(){
+        userService.findAll();
+    }
+
     /**
      * 首页
      * @return
