@@ -1,6 +1,6 @@
 package com.borrow.controller.web;
 
-import com.borrow.entity.UserInfo;
+import com.borrow.entity.Users;
 import com.borrow.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
@@ -78,20 +78,20 @@ public class UserController extends BaseController {
      * @return
      */
     @RequestMapping(method = RequestMethod.POST, value = "/userRegisterAdd")
-    public String userAdd(HttpServletResponse response, UserInfo userInfo) {
+    public String userAdd(HttpServletResponse response, Users user) {
         try {
-            if (StringUtils.isBlank(userInfo.getUserName())) {
+            if (StringUtils.isBlank(user.getUserName())) {
                 renderSuccessJson(response, "2000", "用户名不能为空", null);
             }
-            if (StringUtils.isBlank(userInfo.getPassWord())) {
+            if (StringUtils.isBlank(user.getPassWord())) {
                 renderSuccessJson(response, "2000", "用户密码不能为空", null);
             }
-            if (StringUtils.isBlank(userInfo.getMobile())) {
+            if (StringUtils.isBlank(user.getMobile())) {
                 renderSuccessJson(response, "2000", "手机号不能为空", null);
             }
-            userInfo.setAddTime(new Date());
-            userInfo.setUpdateTime(new Date());
-            userService.save(userInfo);
+            user.setAddTime(new Date());
+            user.setUpdateTime(new Date());
+            userService.save(user);
         } catch (Exception e) {
             logger.error("userRegisterAdd Exception", e);
             renderSuccessJson(response, "2000", "注册失败请稍后再试", null);

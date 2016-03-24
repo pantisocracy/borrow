@@ -1,6 +1,6 @@
 package com.borrow.security;
 
-import com.borrow.entity.UserInfo;
+import com.borrow.entity.Users;
 import com.borrow.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -11,7 +11,6 @@ import org.apache.shiro.util.ByteSource;
 
 
 import javax.annotation.Resource;
-import javax.management.relation.Role;
 
 /**
  * Shiro Realm
@@ -29,7 +28,7 @@ public class ShiroDatabaseRealm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = (String) principalCollection.fromRealm(getName()).iterator().next();
-        UserInfo loginUser = userService.findByUserName(username);
+        Users loginUser = userService.findByUserName(username);
         if (loginUser != null) {
             SimpleAuthorizationInfo authInfo = new SimpleAuthorizationInfo();  
             /*for (Role role : loginUser.getRoles()) {
@@ -51,7 +50,7 @@ public class ShiroDatabaseRealm extends AuthorizingRealm {
         UsernamePasswordToken usernamePasswordToke = (UsernamePasswordToken) token;
         String username = usernamePasswordToke.getUsername();
         String password = String.valueOf(usernamePasswordToke.getPassword());
-        UserInfo loginUser = userService.findByUserName(username);
+        Users loginUser = userService.findByUserName(username);
         if (loginUser == null) {
             throw new UnknownAccountException("用户不存在");
         }
