@@ -4,10 +4,20 @@ package com.borrow.controller.web;
  * Created by lbc on 16/3/18.
  */
 
+import com.alibaba.druid.support.json.JSONUtils;
+import com.borrow.entity.Course;
+import com.borrow.service.CourseService;
 import com.borrow.service.UserService;
+import com.borrow.util.JSonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * web目录前台
@@ -18,6 +28,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CourseService courseService;
+
+
     @RequestMapping("/findAll")
     public void findAll(){
         userService.findAll();
@@ -38,11 +53,21 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/manSubmit")
-    public String manSubmit(){
-        return "index";
+    public ModelAndView manSubmit(HttpServletResponse response){
+        /**
+         * 1 类型表示推荐
+         */
+        Course course = new Course();
+        course.setStagesTypeId(1);
+        //推荐
+        List<Course> list = courseService.findByPage(course, 0, 10);
+        Map paramData = new HashMap();
+        paramData.put("tjList", JSonUtil.toJson(list));
+        //最新的
+        list=courseService.findByDesc(0,10);
+        paramData.put("newList", JSonUtil.toJson(list));
+        return new ModelAndView("index", paramData);
     }
-
-
     /**
      * 前台查询推荐课程或者
      * @parameter  typeid =(1：查询最新课程，2：查询推荐课程)
