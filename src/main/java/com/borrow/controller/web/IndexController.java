@@ -52,7 +52,7 @@ public class IndexController {
         //推荐
         List<Course> list = courseService.findByPage(course, 0, 10);
         Map paramData = new HashMap();
-        paramData.put("tjList", JSonUtil.toJson(list));
+        paramData.put("rmList", JSonUtil.toJson(list));
         //最新的
         list=courseService.findByDesc(0,10);
         paramData.put("newList", JSonUtil.toJson(list));
