@@ -74,8 +74,17 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/products")
-    public String products(){
-        return "products";
+    public ModelAndView products(){
+        Course course = new Course();
+        course.setStagesTypeId(1);
+        //推荐
+        List<Course> list = courseService.findByPage(course, 0, 10);
+        Map paramData = new HashMap();
+        paramData.put("tjList", JSonUtil.toJson(list));
+        //最新的
+        list=courseService.findByDesc(0,10);
+        paramData.put("newList", JSonUtil.toJson(list));
+        return new ModelAndView("products", paramData);
     }
 
     /**
@@ -84,29 +93,14 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/single")
-    public String single(){
-        return "single";
-    }
-
-
-    /**
-     * 查询我的课程列表
-     * @parameter  userId 用户编号
-     * @return
-     */
-    @RequestMapping("/checkout")
-    public String checkout(){
-        return "checkout";
-    }
-
-    /**
-     * 删除我的课程（并根据用户编号重定向到用户课程列表:删除之前程序需验证是否是真实用户）
-     * @parameter   id = 课程编号
-     * @return
-     */
-    @RequestMapping("/checkoutDelete")
-    public String checkoutDelete(){
-        return "checkout";
+    public ModelAndView single(){
+        Course course = new Course();
+        course.setStagesTypeId(1);
+        //推荐
+        List<Course> list = courseService.findByPage(course, 0, 10);
+        Map paramData = new HashMap();
+        paramData.put("tjList", JSonUtil.toJson(list));
+        return new ModelAndView("single", paramData);
     }
 
 }

@@ -13,9 +13,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Lipengfei on 2015/6/24.
@@ -98,4 +101,32 @@ public class UserController extends BaseController {
         }
         return "index";
     }
+
+    /**
+     * 查询我的课程列表
+     * @parameter  userId 用户编号
+     * @return
+     */
+    @RequestMapping("/checkout")
+    public ModelAndView checkout(){
+        Map paramData = new HashMap();
+
+
+
+        return new ModelAndView("single", paramData);
+    }
+
+    /**
+     * 删除我的课程（并根据用户编号重定向到用户课程列表:删除之前程序需验证是否是真实用户）
+     * @parameter   id = 课程编号
+     * @return
+     */
+    @RequestMapping("/checkoutDelete")
+    public ModelAndView checkoutDelete(){
+        Map paramData = new HashMap();
+
+
+        return new ModelAndView("checkout", paramData);
+    }
+
 }
