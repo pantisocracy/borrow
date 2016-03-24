@@ -43,8 +43,20 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/index")
-    public String index(){
-        return "index";
+    public ModelAndView index(){
+        /**
+         * 2 类型表示热门课程
+         */
+        Course course = new Course();
+        course.setStagesTypeId(2);
+        //推荐
+        List<Course> list = courseService.findByPage(course, 0, 10);
+        Map paramData = new HashMap();
+        paramData.put("tjList", JSonUtil.toJson(list));
+        //最新的
+        list=courseService.findByDesc(0,10);
+        paramData.put("newList", JSonUtil.toJson(list));
+        return new ModelAndView("index", paramData);
     }
 
     /**
@@ -53,7 +65,7 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/manSubmit")
-    public ModelAndView manSubmit(HttpServletResponse response){
+    public ModelAndView manSubmit(){
         /**
          * 1 类型表示推荐
          */
