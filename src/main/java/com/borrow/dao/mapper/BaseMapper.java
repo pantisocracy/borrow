@@ -1,7 +1,6 @@
 package com.borrow.dao.mapper;
 
-import com.borrow.entity.UserInfo;
-import com.borrow.util.MyMapper;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
