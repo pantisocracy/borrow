@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.borrow.dao.mapper.AreaMapper" >
+  <resultMap id="BaseResultMap" type="com.borrow.entity.Area" >
+    <constructor >
+      <idArg column="areaid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="areaname" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="parentid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="arrparentid" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="child" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="listorder" jdbcType="SMALLINT" javaType="java.lang.Short" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.borrow.entity.Area" >
+    <constructor >
+      <idArg column="areaid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="areaname" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="parentid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="arrparentid" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="child" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="listorder" jdbcType="SMALLINT" javaType="java.lang.Short" />
+      <arg column="arrchildid" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    areaid, areaname, parentid, arrparentid, child, listorder
+  </sql>
+  <sql id="Blob_Column_List" >
+    arrchildid
+  </sql>
+
+</mapper>

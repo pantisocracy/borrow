@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.borrow.dao.mapper.ApplyMapper" >
+  <resultMap id="BaseResultMap" type="com.borrow.entity.Apply" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="course_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="state" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="add_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="pass_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="dispose_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="provider_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, course_id, state, add_time, pass_time, dispose_id, provider_id
+  </sql>
+
+</mapper>
