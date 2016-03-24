@@ -6,4 +6,8 @@ import org.apache.ibatis.annotations.*;
 
 public interface CourseMapper extends MyMapper<CourseInfo> {
 
+
+
+
+
 }
