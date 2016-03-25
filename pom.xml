@@ -8,7 +8,6 @@
     <artifactId>borrow</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <properties>
         <!-- 文件拷贝时的编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
