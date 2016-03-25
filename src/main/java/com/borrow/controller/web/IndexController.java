@@ -115,4 +115,22 @@ public class IndexController {
         return new ModelAndView("single", paramData);
     }
 
+    /**
+     * 关于我们
+     * @return
+     */
+    @RequestMapping("/ourselves")
+    public ModelAndView ourselves(){
+        return new ModelAndView("ourselves");
+    }
+
+
+    /**
+     * 查询学校列表
+     * @return
+     */
+    @RequestMapping("/schoolList")
+    public ModelAndView schoolList(){
+        return new ModelAndView("schoolList");
+    }
 }
