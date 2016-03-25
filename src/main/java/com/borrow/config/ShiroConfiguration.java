@@ -64,7 +64,7 @@ public class ShiroConfiguration {
     public ShiroFilterFactoryBean getShiroFilterFactoryBean() {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(getDefaultWebSecurityManager());
-        shiroFilterFactoryBean.setLoginUrl("/user/login");//设置没权限时的登陆页面
+        shiroFilterFactoryBean.setLoginUrl("/web/index");//设置没权限时的登陆页面
         //shiroFilterFactoryBean.setSuccessUrl("/views/index.jsp");//登陆成功后跳转的连接
         filterChainDefinitionMap.put("/web/**", "anon");//不需要权限时的访问连接直接不验证权限
         filterChainDefinitionMap.put("/user/login", "anon");//登陆连接也直接不验证
