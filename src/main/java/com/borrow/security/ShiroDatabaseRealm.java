@@ -2,11 +2,14 @@ package com.borrow.security;
 
 import com.borrow.entity.Users;
 import com.borrow.service.UserService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
 
 
@@ -30,6 +33,9 @@ public class ShiroDatabaseRealm extends AuthorizingRealm {
         String username = (String) principalCollection.fromRealm(getName()).iterator().next();
         Users loginUser = userService.findByUserName(username);
         if (loginUser != null) {
+            Subject currentUser = SecurityUtils.getSubject();
+            Session session = currentUser.getSession();
+            session.setAttribute("user",loginUser);
             SimpleAuthorizationInfo authInfo = new SimpleAuthorizationInfo();  
             /*for (Role role : loginUser.getRoles()) {
                 String roleName = String.valueOf(role.getId());
