@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" contentType="text/html;charset=UTF-8"%>
+<!DOCTYPE html>
 <head>
-  <title>Home</title>
+  <title>白条365-www.baitiao365.com</title>
   <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="/js/jquery.min.js"></script>
   <!-- Custom Theme files -->
@@ -11,8 +13,7 @@
   <!--//theme-style-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="Mattress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+  <meta name="keywords" content="教育,白条,代课" />
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
   <!--fonts-->
   <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
@@ -75,54 +76,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container">
     <div class="head-top">
       <div class="logo">
-        <h1><a href="index.jsp">Mattress</a></h1>
+        <h1><a href="/web/index.jsp">
+
+          <img src="/images/logo.png" style="height: 60px;margin-top: -9px;" />
+
+        </a></h1>
       </div>
       <div class=" h_menu4">
         <ul class="memenu skyblue">
           <li><a class="color8" href="index">主页</a></li>
-          <li><a class="color1" href="/web/products">学校</a>
-            <div class="mepanel">
-              <div class="row">
-                <div class="col1">
-                  <div class="h_nav">
-                    <ul>
-                      <li><a href="products.jsp">推荐课程3</a></li>
-                      <li><a href="products.jsp">推荐课程4</a></li>
-                      <li><a href="products.jsp">推荐课程5</a></li>
-                      <li><a href="products.jsp">推荐课程6</a></li>
-                      <li><a href="products.jsp">推荐课程7</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col1">
-                  <div class="h_nav">
-                    <ul>
-                      <li><a href="products.jsp">推荐课程3</a></li>
-                      <li><a href="products.jsp">推荐课程4</a></li>
-                      <li><a href="products.jsp">推荐课程5</a></li>
-                      <li><a href="products.jsp">推荐课程6</a></li>
-                      <li><a href="products.jsp">推荐课程7</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col1">
-                  <div class="h_nav">
-                    <ul>
-                      <li><a href="products.jsp">推荐课程3</a></li>
-                      <li><a href="products.jsp">推荐课程4</a></li>
-                      <li><a href="products.jsp">推荐课程5</a></li>
-                      <li><a href="products.jsp">推荐课程6</a></li>
-                      <li><a href="products.jsp">推荐课程7</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          </li>
+          <li><a class="color1" href="/web/schoolList">学校</a></li>
           <li><a class="color6" href="/web/products">课程</a></li>
-          <li><a class="color6" href="/web/checkout"> 关于我们</a></li>
+          <li><a class="color6" href="/web/ourselves"> 关于我们</a></li>
         </ul>
       </div>
 

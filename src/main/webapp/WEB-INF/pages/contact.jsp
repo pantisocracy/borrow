@@ -97,9 +97,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Mattress Topper</a></li>
 										<li><a href="products.jsp">Pillow</a></li>
 										<li><a href="products.jsp">Pillow Protector</a></li>
-										
-									</ul>	
-								</div>							
+
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -114,9 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Modal</a></li>
 										<li><a href="products.jsp">Pima Cotton</a></li>
 										<li><a href="products.jsp">Silk </a></li>
-										
-									</ul>	
-								</div>							
+
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -131,8 +131,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Mattress Topper</a></li>
 										<li><a href="products.jsp">Pillow</a></li>
 										<li><a href="products.jsp">Pillow Protector</a></li>
-									</ul>	
-								</div>												
+									</ul>
+								</div>
 							</div>
 						  </div>
 						</div>
@@ -153,9 +153,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Mattress Topper</a></li>
 										<li><a href="products.jsp">Pillow</a></li>
 										<li><a href="products.jsp">Pillow Protector</a></li>
-										
-									</ul>	
-								</div>								
+
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -170,13 +170,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Modal</a></li>
 										<li><a href="products.jsp">Pima Cotton</a></li>
 										<li><a href="products.jsp">Silk </a></li>
-										
-									</ul>		
-								</div>							
+
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
-									
+
 									<ul>
 										<li><a href="products.jsp">Bedskirt</a></li>
 										<li><a href="products.jsp">Blanket/Throw</a></li>
@@ -188,15 +188,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="products.jsp">Mattress Topper</a></li>
 										<li><a href="products.jsp">Pillow</a></li>
 										<li><a href="products.jsp">Pillow Protector</a></li>
-									</ul>	
-								</div>												
+									</ul>
+								</div>
 							</div>
 						  </div>
 						</div>
-			    </li>		
+			    </li>
 				<li><a class="color4" href="manLogin.jsp">Login</a></li>
 				<li><a class="color6" href="contact.jsp">Contact</a></li>
-			  </ul> 
+			  </ul>
 			</div>
 				
 				<div class="clearfix"> </div>
