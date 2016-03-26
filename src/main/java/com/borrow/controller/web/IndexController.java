@@ -140,7 +140,7 @@ public class IndexController {
      */
     @RequestMapping("/login")
     public ModelAndView login(){
-        return new ModelAndView("manLogin");
+        return new ModelAndView("login");
     }
 
 
