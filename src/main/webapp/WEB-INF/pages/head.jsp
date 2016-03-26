@@ -84,6 +84,7 @@
       </div>
       <div class=" h_menu4">
         <ul class="memenu skyblue">
+          <li><a class="color6" href="/web/login"> 登录</a></li>
           <li><a class="color8" href="index">主页</a></li>
           <li><a class="color1" href="/web/schoolList">学校</a></li>
           <li><a class="color6" href="/web/products">课程</a></li>

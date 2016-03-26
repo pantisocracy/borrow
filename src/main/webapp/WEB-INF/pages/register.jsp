@@ -6,7 +6,7 @@
 <!-- grow -->
 	<div class="grow">
 		<div class="container">
-			<h2>Register</h2>
+			<h2>用户注册</h2>
 		</div>
 	</div>
 	<!-- grow -->
@@ -14,35 +14,39 @@
 <div class=" container">
 <div class=" register">
 	
-		  	  <form action="/web/addUser">
+		  	  <form action="/web/index">
 				 <div class="col-md-6 register-top-grid">
-					<h3>Personal infomation</h3>
+					<h3>请输入您的个人信息</h3>
 					 <div>
-						<span>First Name</span>
+						<span>姓名</span>
 						<input type="text"> 
 					 </div>
 					 <div>
-						<span>Last Name</span>
+						<span>手机号</span>
 						<input type="text"> 
 					 </div>
 					 <div>
-						 <span>Email Address</span>
+						 <span>邮箱</span>
 						 <input type="text"> 
 					 </div>
 					   <a class="news-letter" href="#">
-						 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>我已同意以上需求</label>
 					   </a>
 					 </div>
 				     <div class="col-md-6 register-bottom-grid">
-						    <h3>Login information</h3>
+						    <h3>请输入你的账户信息</h3>
 							 <div>
-								<span>Password</span>
+								<span>用户名</span>
 								<input type="password">
 							 </div>
 							 <div>
-								<span>Confirm Password</span>
+								<span>密码</span>
 								<input type="password">
 							 </div>
+						    <div>
+							 <span>确认密码</span>
+							 <input type="password">
+						 </div>
 							 <input type="submit" value="submit">
 							
 					 </div>

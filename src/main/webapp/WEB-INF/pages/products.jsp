@@ -41,7 +41,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_2.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>ESSENTIAL</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -63,7 +63,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_3.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>CLARISSA</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -85,7 +85,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_4.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>LITTLE HOME</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -111,7 +111,7 @@
 						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_5.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>TRIBECA LIVING</span>
+									<span>查看更多</span>
 
 								</h3>
 							</div>
@@ -134,7 +134,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_6.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>ESSENTIAL</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -155,7 +155,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_7.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>CLARISSA</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -176,7 +176,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_8.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>LITTLE HOME</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -223,7 +223,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_2.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>ESSENTIAL</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -245,7 +245,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_3.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>CLARISSA</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -267,7 +267,7 @@
 						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_4.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>LITTLE HOME</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>

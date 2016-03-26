@@ -7,7 +7,7 @@
       <div class="col-md-3 amet-sed">
         <h4>更多信息</h4>
         <ul class="nav-bottom">
-          <li><a href="#">登录</a></li>
+          <li><a href="/web/">登录</a></li>
           <li><a href="#">注册</a></li>
           <li><a href="contact.jsp">关于我们</a></li>
           <li><a href="#">学校</a></li>

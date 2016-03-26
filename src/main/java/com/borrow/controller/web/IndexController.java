@@ -133,4 +133,24 @@ public class IndexController {
     public ModelAndView schoolList(){
         return new ModelAndView("schoolList");
     }
+
+    /**
+     * 登录
+     * @return
+     */
+    @RequestMapping("/login")
+    public ModelAndView login(){
+        return new ModelAndView("manLogin");
+    }
+
+
+    /**
+     * 注册
+     * @return
+     */
+    @RequestMapping("/register")
+    public ModelAndView register(){
+        return new ModelAndView("register");
+    }
+
 }

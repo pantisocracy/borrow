@@ -22,7 +22,7 @@
 			    <li>
 
 						<div class="banner-text threed">
-							<h1 style="font-size: 50px;margin-top: 30px;">Solutions that you need! </h1>
+							<h1 style="font-size: 50px;margin-top: 30px;"></h1>
 						<%--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>--%>
 
 						</div>
@@ -54,7 +54,7 @@
 	</div>
 
 <!--content-->
-<div class="container">
+<div class="container" style="height: 157rem">
 	<div class="cont">
 		<div class="content">
 			<div class="content-top-bottom">
@@ -63,7 +63,7 @@
 				<div class="col-md-6">
 					<div class="col-md2">
 						<div class="col-md-6 men1">
-							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" style="width: 320px" src="/images/ke1.jpg" alt="">
+							<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" style="width: 320px" src="/images/ke1.jpg" alt="">
 								<div class="b-wrapper">
 									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 										<span>查看更多</span>
@@ -103,7 +103,7 @@
 							<span style="position: relative;top: 25px;">利息费率&nbsp;:&nbsp;0息、0利率<br/></span>
 						</div>
 						<div class="col-md-6 men2">
-							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke2.jpg" alt="">
+							<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke2.jpg" alt="">
 								<div class="b-wrapper">
 									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 										<span>查看更多</span>
@@ -118,7 +118,7 @@
 				<div class="col-md-6">
 					<div class="col-md2">
 						<div class="col-md-6 men1">
-							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke3.jpg" alt="">
+							<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke3.jpg" alt="">
 								<div class="b-wrapper">
 									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 										<span>查看更多</span>
@@ -155,7 +155,7 @@
 							<span style="position: relative;top: 25px;">利息费率&nbsp;:&nbsp;0息、0利率<br/></span>
 						</div>
 						<div class="col-md-6 men2">
-							<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke1.jpg" alt="">
+							<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/ke1.jpg" alt="">
 								<div class="b-wrapper">
 									<h3 class="b-animate b-from-top top-in2   b-delay03 ">
 										<span>查看更多</span>
@@ -173,7 +173,7 @@
 				<h1>最新课程</h1>
 				<div class="grid-in">
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_1.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_1.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
 									<span>查看更多</span>
@@ -195,10 +195,10 @@
 
 
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_2.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_2.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>ESSENTIAL</span>
+												<span>查看更多</span>
 											</h3>
 										</div>
 						</a>
@@ -217,10 +217,10 @@
 
 
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_3.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_3.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>CLARISSA</span>
+												<span>查看更多</span>
 											</h3>
 										</div>
 						</a>
@@ -229,7 +229,7 @@
 								<span style="font-size: 12px;color: #999;position: relative;top: 5px;">
 								学制：全日制  专科三年  文理兼收<br/>
 								授予学位：工学学士<br/>
-								培养目标：本专业培养掌握电子技术的基础理论与专门知识，熟悉计算机操作应用，具有较强工程实践能力的高级技术应用型人才....<br>
+								培养目标：本专业培养掌握电子技术的基础理论与专门知识，熟悉计算机操作应用，具有较强工程实践能力的高级技术应....<br>
 								</span>
 							<span style="position: relative;top: 20px;">分期付&nbsp;:&nbsp;<a style="color:#f55;">门店价*12期</a><br/></span>
 							<span style="position: relative;top: 25px;">利息费率&nbsp;:&nbsp;0息、0利率<br/></span>
@@ -239,10 +239,10 @@
 
 
 					<div class="col-md-3 grid-top">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_4.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_4.jpg" alt="">
 							<div class="b-wrapper">
 											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>LITTLE HOME</span>
+												<span>查看更多</span>
 											</h3>
 										</div>
 						</a>
@@ -265,10 +265,10 @@
 			<div class="content-top">
 				<div class="grid-in"  style="margin-top: -100px;">
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single.jsp" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_5.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_5.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>TRIBECA LIVING</span>
+									<span>查看更多</span>
 
 								</h3>
 							</div>
@@ -288,10 +288,10 @@
 						</div>
 					</div>
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_6.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_6.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>ESSENTIAL</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -309,10 +309,10 @@
 					</div>
 
 					<div class="col-md-3 grid-top simpleCart_shelfItem">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_7.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_7.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>CLARISSA</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>
@@ -330,10 +330,10 @@
 					</div>
 
 					<div class="col-md-3 grid-top">
-						<a href="single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_8.jpg" alt="">
+						<a href="/web/single" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="/images/keb_8.jpg" alt="">
 							<div class="b-wrapper">
 								<h3 class="b-animate b-from-left    b-delay03 ">
-									<span>LITTLE HOME</span>
+									<span>查看更多</span>
 								</h3>
 							</div>
 						</a>

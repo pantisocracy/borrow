@@ -26,7 +26,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 							<div class="pro-grid">
 										<span class="buy-in">查看课程列表</span>
 							</div>
@@ -48,7 +48,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 								<div class="pro-grid">
 									<span class="buy-in">查看课程列表</span>
 								</div>
@@ -73,7 +73,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 								<div class="pro-grid">
 									<span class="buy-in">查看课程列表</span>
 								</div>
@@ -95,7 +95,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 								<div class="pro-grid">
 									<span class="buy-in">查看课程列表</span>
 								</div>
@@ -121,7 +121,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 								<div class="pro-grid">
 									<span class="buy-in">查看课程列表</span>
 								</div>
@@ -144,7 +144,7 @@
 								</div>
 
 							</div>
-							<a href="">
+							<a href="/web/products">
 								<div class="pro-grid">
 									<span class="buy-in">查看课程列表</span>
 								</div>
@@ -165,66 +165,66 @@
 			<div class="col-md-3 prod-rgt">
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/ke1.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/ke1.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">土木工程专业</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">土木工程专业</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 						<div class="clearfix"></div>
 				</div>
 
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/ke2.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/ke2.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">商务英语</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">商务英语</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/ke4.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/ke4.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">播音主持</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">播音主持</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/keb_4.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/keb_4.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">播音主持</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">播音主持</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/keb_2.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/keb_2.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">播音主持</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">播音主持</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 
 				<div class=" pro-tp">
 					<div class="pl-lft">
-						<a href="single.jsp"><img class="img-responsive" src="/images/keb_1.jpg" alt=""></a>
+						<a href="/web/single"><img class="img-responsive" src="/images/keb_1.jpg" alt=""></a>
 					</div>
 					<div class="pl-rgt">
-						<h6><a href="single.jsp">播音主持</a></h6>
-						<p style="font-size: 1.1rem"><a href="single.jsp"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
+						<h6><a href="/web/single">播音主持</a></h6>
+						<p style="font-size: 1.1rem"><a href="/web/single"><br>门店价*12期<br>分期付 : 门店价*12期</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
