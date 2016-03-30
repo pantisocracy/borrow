@@ -129,10 +129,13 @@ public class UserController extends BaseController {
         return new ModelAndView("checkout", paramData);
     }
 
-
     /**
+     * 登录
      *
+     * @return
      */
-
-
+    @RequestMapping("/index")
+    public String index() {
+        return "../admin/index";
+    }
 }
