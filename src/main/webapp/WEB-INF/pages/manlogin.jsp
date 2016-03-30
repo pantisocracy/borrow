@@ -16,7 +16,7 @@
 		<div class="account">
 		<div class="account-pass">
 		<div class="col-md-8 account-top">
-			<form method="post" action="/user/submit">
+			<form method="post" action="/web/manSubmit">
 
 			<div>
 				<span>用户名</span>
