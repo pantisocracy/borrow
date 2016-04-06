@@ -9,6 +9,11 @@ import com.borrow.entity.Course;
 import com.borrow.service.CourseService;
 import com.borrow.service.UserService;
 import com.borrow.util.JSonUtil;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.*;
+import org.apache.shiro.subject.Subject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +31,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("web/")
 public class IndexController {
+    private final static Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserService userService;
 
@@ -65,20 +71,43 @@ public class IndexController {
      * @return
      */
     @RequestMapping("/manSubmit")
-    public ModelAndView manSubmit(){
-        /**
-         * 1 类型表示推荐
-         */
-        Course course = new Course();
-        course.setStagesTypeId(1);
-        //推荐
-        List<Course> list = courseService.findByPage(course, 0, 10);
-        Map paramData = new HashMap();
-        paramData.put("tjList", JSonUtil.toJson(list));
-        //最新的
-        list=courseService.findByDesc(0,10);
-        paramData.put("newList", JSonUtil.toJson(list));
-        return new ModelAndView("index", paramData);
+    public ModelAndView manSubmit(String userName, String passWord, HttpServletResponse response){
+
+        Subject currentUser = SecurityUtils.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, passWord);
+        try {
+            currentUser.login(token);
+            //renderSuccessJson(response, "100", "登陆成功", token);
+            /**
+             * 1 类型表示推荐
+             */
+            Course course = new Course();
+            course.setStagesTypeId(1);
+            //推荐
+            List<Course> list = courseService.findByPage(course, 0, 10);
+            Map paramData = new HashMap();
+            paramData.put("tjList", JSonUtil.toJson(list));
+            //最新的
+            list=courseService.findByDesc(0,10);
+            paramData.put("newList", JSonUtil.toJson(list));
+            return new ModelAndView("index", paramData);
+
+        } catch (UnknownAccountException e) {
+            logger.error("用户不存在", e);
+            return new ModelAndView("manLogin");
+        } catch (IncorrectCredentialsException e) {
+            logger.error("密码错误", e);
+            return new ModelAndView("manLogin");
+        } catch (LockedAccountException e) {
+            logger.error("账户已锁定", e);
+            return new ModelAndView("manLogin");
+        } catch (ExcessiveAttemptsException e) {
+            logger.error("尝试次数过多", e);
+            return new ModelAndView("manLogin");
+        } catch (AuthenticationException e) {
+            logger.error("认证失败！", e);
+            return new ModelAndView("manLogin");
+        }
     }
     /**
      * 前台查询推荐课程或者
@@ -140,7 +169,7 @@ public class IndexController {
      */
     @RequestMapping("/login")
     public ModelAndView login(){
-        return new ModelAndView("login");
+        return new ModelAndView("manLogin");
     }
 
 

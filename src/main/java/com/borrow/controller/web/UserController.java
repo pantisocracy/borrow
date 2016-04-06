@@ -41,13 +41,13 @@ public class UserController extends BaseController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/submit")
-    @ResponseBody
-    public void login(String userName, String passWord, HttpServletResponse response) {
+    public String login(String userName, String passWord, HttpServletResponse response) {
         Subject currentUser = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, passWord);
         try {
             currentUser.login(token);
-            renderSuccessJson(response, "100", "登陆成功", null);
+            //renderSuccessJson(response, "100", "登陆成功", token);
+            return "../admin/index";
         } catch (UnknownAccountException e) {
             logger.error("用户不存在", e);
             renderSuccessJson(response, "200", "用户不存在", null);
@@ -64,6 +64,7 @@ public class UserController extends BaseController {
             logger.error("认证失败！", e);
             renderSuccessJson(response, "200", "认证失败", null);
         }
+        return "login";
     }
 
     /**
@@ -129,10 +130,13 @@ public class UserController extends BaseController {
         return new ModelAndView("checkout", paramData);
     }
 
-
     /**
+     * 登录
      *
+     * @return
      */
-
-
+    @RequestMapping("/index")
+    public String index() {
+        return "../admin/index";
+    }
 }
